@@ -1,0 +1,41 @@
+# Dependencies
+/vendor/
+**/vendor/
+/node_modules/
+**/node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Build & cache
+/public/build/
+/public/hot
+/public/storage
+/storage/*.key
+**/storage/*.key
+**/storage/framework/cache/*
+**/storage/framework/sessions/*
+**/storage/framework/views/*
+**/storage/logs/*
+**/bootstrap/cache/*
+.phpunit.result.cache
+.phpunit.cache
+/public/fonts-manifest.dev.json
+
+# IDE & OS
+.idea/
+.vscode/
+.nova/
+.zed/
+.codex/
+.phpactor.json
+_ide_helper.php
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

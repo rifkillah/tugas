@@ -1,0 +1,193 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Buku;
+use Illuminate\Database\Seeder;
+
+class BukuSeeder extends Seeder
+{
+    /**
+     * Seed the library collection.
+     */
+    public function run(): void
+    {
+        $daftarBuku = [
+            [
+                'kode_buku' => 'BK-001',
+                'judul' => 'Bumi Manusia',
+                'penulis' => 'Pramoedya Ananta Toer',
+                'penerbit' => 'Lentera Dipantara',
+                'tahun' => 2005,
+                'kategori' => 'Sastra',
+                'rak' => 'A-01',
+                'stok_total' => 6,
+                'stok_tersedia' => 6,
+                'sinopsis' => 'Kisah Minke, pemuda terpelajar pada akhir masa kolonial, yang berhadapan dengan aturan feodal dan kolonialisme. Buku pertama dari tetralogi Buru.',
+            ],
+            [
+                'kode_buku' => 'BK-002',
+                'judul' => 'Laskar Pelangi',
+                'penulis' => 'Andrea Hirata',
+                'penerbit' => 'Bentang Pustaka',
+                'tahun' => 2005,
+                'kategori' => 'Sastra',
+                'rak' => 'A-02',
+                'stok_total' => 5,
+                'stok_tersedia' => 5,
+                'sinopsis' => 'Sepuluh anak Belitung berjuang mempertahankan sekolah mereka. Cerita tentang persahabatan, keterbatasan, dan harapan.',
+            ],
+            [
+                'kode_buku' => 'BK-003',
+                'judul' => 'Filosofi Teras',
+                'penulis' => 'Henry Manampiring',
+                'penerbit' => 'Kompas',
+                'tahun' => 2018,
+                'kategori' => 'Psikologi',
+                'rak' => 'B-01',
+                'stok_total' => 4,
+                'stok_tersedia' => 4,
+                'sinopsis' => 'Pengantar filsafat Stoa untuk kehidupan sehari-hari: membedakan hal yang bisa dan tidak bisa dikendalikan.',
+            ],
+            [
+                'kode_buku' => 'BK-004',
+                'judul' => 'Sapiens: Riwayat Singkat Umat Manusia',
+                'penulis' => 'Yuval Noah Harari',
+                'penerbit' => 'Kepustakaan Populer Gramedia',
+                'tahun' => 2017,
+                'kategori' => 'Sejarah',
+                'rak' => 'C-01',
+                'stok_total' => 3,
+                'stok_tersedia' => 3,
+                'sinopsis' => 'Perjalanan Homo sapiens dari pemburu-pengumpul hingga masyarakat teknologi, ditinjau dari revolusi kognitif, pertanian, dan sains.',
+            ],
+            [
+                'kode_buku' => 'BK-005',
+                'judul' => 'Clean Code',
+                'penulis' => 'Robert C. Martin',
+                'penerbit' => 'Prentice Hall',
+                'tahun' => 2008,
+                'kategori' => 'Teknologi',
+                'rak' => 'D-01',
+                'stok_total' => 3,
+                'stok_tersedia' => 3,
+                'sinopsis' => 'Panduan menulis kode yang mudah dibaca, dirawat, dan diuji, dilengkapi prinsip penamaan, fungsi, dan penanganan kesalahan.',
+            ],
+            [
+                'kode_buku' => 'BK-006',
+                'judul' => 'Algoritma dan Pemrograman',
+                'penulis' => 'Rinaldi Munir',
+                'penerbit' => 'Informatika',
+                'tahun' => 2016,
+                'kategori' => 'Teknologi',
+                'rak' => 'D-02',
+                'stok_total' => 5,
+                'stok_tersedia' => 5,
+                'sinopsis' => 'Dasar-dasar algoritma, tipe data, struktur kendali, prosedur, dan array dengan contoh implementasi dalam bahasa pemrograman.',
+            ],
+            [
+                'kode_buku' => 'BK-007',
+                'judul' => 'Metodologi Penelitian Kualitatif',
+                'penulis' => 'Sugiyono',
+                'penerbit' => 'Alfabeta',
+                'tahun' => 2019,
+                'kategori' => 'Metodologi',
+                'rak' => 'C-02',
+                'stok_total' => 2,
+                'stok_tersedia' => 2,
+                'sinopsis' => 'Rancangan penelitian kualitatif, teknik pengumpulan data, analisis, hingga penyusunan laporan penelitian.',
+            ],
+            [
+                'kode_buku' => 'BK-008',
+                'judul' => 'Atomic Habits',
+                'penulis' => 'James Clear',
+                'penerbit' => 'Gramedia Pustaka Utama',
+                'tahun' => 2019,
+                'kategori' => 'Pengembangan Diri',
+                'rak' => 'B-02',
+                'stok_total' => 4,
+                'stok_tersedia' => 4,
+                'sinopsis' => 'Cara membangun kebiasaan kecil yang berdampak besar melalui perubahan lingkungan, identitas, dan sistem harian.',
+            ],
+            [
+                'kode_buku' => 'BK-009',
+                'judul' => 'Sejarah Indonesia Modern',
+                'penulis' => 'M. C. Ricklefs',
+                'penerbit' => 'Serambi',
+                'tahun' => 2008,
+                'kategori' => 'Sejarah',
+                'rak' => 'C-03',
+                'stok_total' => 2,
+                'stok_tersedia' => 2,
+                'sinopsis' => 'Uraian sejarah Indonesia dari abad ke-13 sampai awal abad ke-21, mencakup perdagangan, kolonialisme, dan pembentukan negara.',
+            ],
+            [
+                'kode_buku' => 'BK-010',
+                'judul' => 'Statistika untuk Penelitian',
+                'penulis' => 'Sugiyono',
+                'penerbit' => 'Alfabeta',
+                'tahun' => 2017,
+                'kategori' => 'Metodologi',
+                'rak' => 'C-04',
+                'stok_total' => 3,
+                'stok_tersedia' => 3,
+                'sinopsis' => 'Statistika deskriptif dan inferensial untuk pengolahan data penelitian, disertai contoh perhitungan dan interpretasi.',
+            ],
+            [
+                'kode_buku' => 'BK-011',
+                'judul' => 'Ronggeng Dukuh Paruk',
+                'penulis' => 'Ahmad Tohari',
+                'penerbit' => 'Gramedia Pustaka Utama',
+                'tahun' => 2003,
+                'kategori' => 'Sastra',
+                'rak' => 'A-03',
+                'stok_total' => 2,
+                'stok_tersedia' => 2,
+                'sinopsis' => 'Kehidupan Srintil, penari ronggeng di sebuah dukuh, yang terjepit antara tradisi, kekerasan politik, dan perubahan zaman.',
+            ],
+            [
+                'kode_buku' => 'BK-012',
+                'judul' => 'Perilaku Organisasi',
+                'penulis' => 'Stephen P. Robbins',
+                'penerbit' => 'Salemba Empat',
+                'tahun' => 2015,
+                'kategori' => 'Manajemen',
+                'rak' => 'E-01',
+                'stok_total' => 2,
+                'stok_tersedia' => 2,
+                'sinopsis' => 'Kajian perilaku individu dan kelompok dalam organisasi, meliputi motivasi, kepemimpinan, komunikasi, dan budaya kerja.',
+            ],
+            [
+                'kode_buku' => 'BK-013',
+                'judul' => 'Karya Tulis Ilmiah',
+                'penulis' => 'Dalman',
+                'penerbit' => 'Rajawali Pers',
+                'tahun' => 2016,
+                'kategori' => 'Metodologi',
+                'rak' => 'C-05',
+                'stok_total' => 1,
+                'stok_tersedia' => 1,
+                'sinopsis' => 'Panduan praktis menyusun karya tulis ilmiah: pemilihan topik, penulisan kutipan, sistematika, dan tata cara penyajian.',
+            ],
+            [
+                'kode_buku' => 'BK-014',
+                'judul' => 'Pengantar Ilmu Komunikasi',
+                'penulis' => 'Deddy Mulyana',
+                'penerbit' => 'Remaja Rosdakarya',
+                'tahun' => 2015,
+                'kategori' => 'Komunikasi',
+                'rak' => 'E-02',
+                'stok_total' => 3,
+                'stok_tersedia' => 3,
+                'sinopsis' => 'Konsep dasar komunikasi antarpribadi, kelompok, dan massa, beserta model dan fungsi komunikasi dalam kehidupan sosial.',
+            ],
+        ];
+
+        foreach ($daftarBuku as $data) {
+            Buku::query()->updateOrCreate(
+                ['kode_buku' => $data['kode_buku']],
+                $data,
+            );
+        }
+    }
+}
